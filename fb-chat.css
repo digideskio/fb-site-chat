@@ -17,7 +17,7 @@
 			  right: 5px;
 			}
 			.fb-widget-iframe-container iframe {
-			  border-radius: 5px 5px 0 0;
+			  border-radius: 2px 2px 0 0;
 			  transition: all 250ms ease-in-out;
 			  width: 340px;
 			  height: 500px;
