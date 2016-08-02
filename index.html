@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
         
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -66,6 +67,15 @@
         	.social-links a, .social-links i {
         		cursor: pointer;
         	}
+        	.img-round {
+			    transition: all 0.2s ease;
+			    height: 120px;
+			    border-radius: 50%;
+			    box-shadow: 1px 5px 5px rgba(0,0,0,0.075);
+        	}
+        	.img-round:hover {
+			    transform: translateY(-6px);
+        	}
         	@media screen and (min-width: 1024px) {
 				.prm-120 {
 					padding-right: 120px;
@@ -96,7 +106,7 @@
 					
 				
 					<div class="row">
-						<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+						<div class="col-md-10 col-md-offset-1 col-sm-12 text-center wow fadeInUp">
 							<img alt="Screenshot" src="img/macbook-pro-mockup.png">
 						</div>
 					</div>
@@ -107,7 +117,7 @@
 			<section class="features features-4" style="">
 				<div class="container">
 					<div class="row v-align-children">
-						<div class="col-sm-5 text-center feature">
+						<div class="col-sm-5 text-center feature wow fadeInLeft">
 							<img alt="Feature Image" src="img/messenger-icon.png" style="max-height: 280px">
 						</div>
 			
@@ -130,7 +140,7 @@
 							
 						</div>
 					
-						<div class="col-md-6 col-sm-6">
+						<div class="col-md-6 col-sm-6 wow fadeInRight">
 							<img alt="iMac Website Mockup" src="img/imac-mockup.png">
 						</div>
 					</div>
@@ -149,21 +159,21 @@
 					</div>
 				
 					<div class="row">
-						<div class="col-sm-4 text-center feature">
+						<div class="col-sm-4 text-center feature wow fadeIn">
 							<i class="icon-design-pencil-rule-streamline"></i>
 							<h5>100% customizable</h5>
 							<p>
 								Adjusts for mobile, desktop, and tablet users. Perfect for light or dark websites. Move the chat window to the left or right.</p>
 						</div>
 					
-						<div class="col-sm-4 text-center feature">
+						<div class="col-sm-4 text-center feature wow fadeIn" data-wow-delay="250ms">
 							<i class="icon-bubble-love-streamline-talk"></i>
 							<h5>Live in-page chat</h5>
 							<p>
 								Increase response rates and improve engagement with your users by integrating live chat straight into your website.</p>
 						</div>
 					
-						<div class="col-sm-4 text-center feature">
+						<div class="col-sm-4 text-center feature wow fadeIn" data-wow-delay="500ms">
 							<i class="icon-backpack-streamline-trekking"></i>
 							<h5>Fast, easy, &amp; free</h5>
 							<p>
@@ -201,7 +211,7 @@
 							<!-- <img src="img/messenger-pane.png" style="max-width:320px"> -->
 						</div>
 					
-						<div class="col-md-5 col-sm-8">
+						<div class="col-md-5 col-sm-8  wow fadeInRight">
 							<form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill out all fields." onsubmit="return false;">
 								<h6 style="letter-spacing: 0.8px">Customize your live chat widget</h6>
 								<strong>Facebook page URL</strong><br>
@@ -237,10 +247,10 @@
 						<li>
 							<div class="container">
 								<div class="row">
-									<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+									<div class="col-md-10 col-md-offset-1 col-sm-12 text-center wow fadeIn" data-wow-delay="300ms">
 										<h4 style="margin-bottom:10px;">Looking for a UX Designer who loves product? Let's chat!</h4>
 										<p class="lead">I'm a UX Designer with Dev & PM experience in Seattle, WA. I'm currently looking<br>for a position in the Pacific Northwest, Bay Area, or Remote.</p>
-										<img alt="James Futhey" src="img/me.jpg" style="height:120px;border-radius:50%;box-shadow: 1px 5px 5px rgba(0,0,0,0.075);">
+										<img alt="James Futhey" src="img/me.jpg" class="img-round">
 										<p><em>James Futhey, UX Designer</em></p>
 										<p>
 											<ul class="social-links">
@@ -278,11 +288,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/placeholders.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
         <script src="app.js"></script>
+
+        <script>
+		    new WOW({
+		    	mobile: false,
+		    	live: false
+		    }).init();
+		</script>
 
         <!-- Facebook Site Chat Widget -->
         <script>window.fbChatWidgetAlignment = "fb-widget-left";window.fbChatWidgetURL = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDesignCrewApp&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1802622113302450";window.fbChatWidgetText = "Message us";</script><script src="https://kidgodzilla.github.io/fb-site-chat/m.js"></script>
