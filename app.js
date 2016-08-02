@@ -33,7 +33,7 @@ $('#text').on('input keyup change', function () {
 
         		swal({   
         		      title: "Embed code",   
-        		      text: "<textarea class='ta' rows='5'></textarea><small class='sub'></small>",   
+        		      text: "<p>Embed this code before the closing <code>&lt;/body></code> tag<br>of your website, or as a Wordpress widget.</p><br><textarea class='ta' rows='5'></textarea><small class='sub'></small>",   
         		      html: true,
         		      animation: false
         		});
