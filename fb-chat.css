@@ -14,6 +14,7 @@
 			.fb-widget-iframe-container iframe {
 			  border-radius: 5px 5px 0 0;
 			  transition: all 250ms ease-in-out;
+			  max-width: 100vw;
 			}
 			.fb-widget-iframe-container .fb-widget-close-button {
 			  z-index: 999999999999999999;
