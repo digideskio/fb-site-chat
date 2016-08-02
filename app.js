@@ -7,7 +7,7 @@ $('#text').on('input keyup change', function () {
 
 			$('#name').on('input keyup change', function () {
         		var val = $('#name').val();
-        		var url = 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F'+val+'&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1513413698897095';
+        		var url = 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F'+val+'&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1802622113302450';
                         window.fbChatWidgetURL = url;
 
         		$('.fb-widget-iframe-container iframe').attr('src', url);
