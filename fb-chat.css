@@ -20,8 +20,9 @@
 			  position: absolute;
 			  top: 0;
 			  right: 6px;
-			  color: #333;
-			  font-weight: 300;
+			  color: #fff;
+			  text-shadow: 1px 1px 3px #000;
+			  font-weight: 400;
 			  font-family: Lato, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
 			  cursor: pointer;
 			  padding: 5px;
