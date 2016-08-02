@@ -5,6 +5,11 @@
 			  box-shadow: 3px 3px 3px rgba(0,0,0,0.085);
 			  z-index: 99999999999999999;
 			}
+			@media screen and (max-width: 360px) {
+				.fb-widget-iframe-container {
+					left: -9px;
+				}
+			}
 			.fb-widget-iframe-container.fb-widget-left {
 			  left: 5px;
 			}
@@ -16,7 +21,7 @@
 			  transition: all 250ms ease-in-out;
 			  width: 340px;
 			  height: 500px;
-			  max-width: 100vw;
+			  max-width: calc(100vw + 12px);
 			  max-height: 100vh;
 			  border: none;
 			  overflow: hidden;
