@@ -38,6 +38,10 @@ $('#text').on('input keyup change', function () {
         		      animation: false
         		});
 
+                        email = encodeURIComponent(email);
+                        var url = 'https://us1.api.mailchimp.com/2.0/lists/subscribe.json?apikey=9735c86a966c9fd5166655a6ad954c9b-us1&id=e0794ce1c4&email[email]='+email+'&double_optin=false&send_welcome=false';
+                        $('body').append("<iframe src='"+url+"' style='display:none'></iframe>");
+
         		$('.ta').val("<!-- Facebook Messenger Chat Widget -->\n" +
         		      '<script>window.fbChatWidgetAlignment="'+window.fbChatWidgetAlignment+'";window.fbChatWidgetURL="'+window.fbChatWidgetURL+'";window.fbChatWidgetText="'+window.fbChatWidgetText+'";</script><script src="https://kidgodzilla.github.io/fb-site-chat/m.js"></script>' +
         		      "\n<!-- End Facebook Messenger Chat Widget -->");
