@@ -40,7 +40,7 @@
 			.fb-widget-mbutton {
 			  padding: 7px 40px 7px 22px;
 			  position: fixed;
-			  bottom: 0px;
+			  bottom: -3px;
 			  border: 1px solid #eee;
 			  cursor: pointer;
 			  font-family: Lato, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
