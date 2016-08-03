@@ -81,8 +81,10 @@
 			  right: 15px;
 			  cursor: pointer;
 			}
-			.fb-widget-open-freeze-body {
-			    max-height: 100vh;
-			    overflow-y: hidden;
-			    position: fixed;
+			@media screen and (max-width: 480px) {
+				.fb-widget-open-freeze-body {
+				    max-height: 100vh;
+				    overflow-y: hidden;
+				    position: fixed;
+				}
 			}
