@@ -84,6 +84,11 @@
 					padding-right: 50px;
 				}
 			}
+			@media (max-width: 768px) {
+			  .text-xs-left { text-align: left !important; }
+			  .text-xs-right { text-align: right !important; }
+			  .text-xs-center { text-align: center !important; }
+			}
         </style>
     </head>
     <body>
@@ -117,13 +122,13 @@
 			<section class="features features-4" style="">
 				<div class="container">
 					<div class="row v-align-children">
-						<div class="col-sm-5 text-center feature wow fadeInLeft">
+						<div class="col-sm-5 text-center hidden-xs feature wow fadeInLeft">
 							<img alt="Feature Image" src="img/messenger-icon.png" style="max-height: 280px">
 						</div>
 			
-						<div class="col-sm-7 col-md-6 col-md-offset-1 feature prm-120" style="">
-							<h4 style="">Free Live Chat for your site<br></h4>
-							<p style="">Unless you need the advanced features required by premium services, which can cost over $50 per month, why pay for a live chat solution? Chat with your users on a platform they already use, using our beautiful and customizable interface.</p>
+						<div class="col-sm-7 col-md-6 col-md-offset-1 text-xs-center feature prm-120" style="">
+							<h4 class="text-xs-center">Free Live Chat for your site<br></h4>
+							<p class="text-xs-center">Unless you need the advanced features required by premium services, which can cost over $50 per month, why pay for a live chat solution? Chat with your users on a platform they already use, using our beautiful and customizable interface.</p>
 						</div>
 					</div>
 				</div>
@@ -133,7 +138,7 @@
 			<section class="features features-14 bg-secondary">
 				<div class="container">
 					<div class="row v-align-children">
-						<div class="col-md-6 col-sm-6 prm-50">
+						<div class="col-md-6 col-sm-6 text-xs-center prm-50">
 							<h4>A great solution for your website</h4>
 							<p class="lead">
 								Facebook Messenger is a great, free solution for your next project. Get started quickly and easily, and evaluate your need for live chat before investing in a pricey platform you may not need.</p>
@@ -201,11 +206,10 @@
 			<section class="cta cta-3 bg-secondary">
 				<div class="container">
 					<div class="row v-align-children">
-						<div class="col-sm-4 col-md-5 text-left">
+						<div class="col-sm-4 col-md-5 text-xs-center text-left">
 
-							<h3>Build yours now.</h3>
-							<p>
-
+							<h3 class="text-xs-center">Build yours now.</h3>
+							<p class="text-xs-center">
 								Customize your form and get an embed code for your website, so you can use Facebook Messenger (along with your Facebook page account) to interact with visitors to your website.
 							</p>
 							<!-- <img src="img/messenger-pane.png" style="max-width:320px"> -->
