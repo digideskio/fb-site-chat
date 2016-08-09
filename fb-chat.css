@@ -71,9 +71,16 @@
 			.fb-widget-mbutton div {
 			  display: inline-block;
 			  font-size: 14px;
+			  font-weight: 400;
 			  color: #444;
 			  padding-right: 40px;
 			  cursor: pointer;
+			}
+			@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
+			    /* Retina-specific */
+			    .fb-widget-mbutton div {
+			    	font-weight: 300;
+			    }
 			}
 			.fb-widget-mbutton img {
 			  height: 48px;
