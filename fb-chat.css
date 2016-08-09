@@ -4,6 +4,12 @@
 			  border-radius: 5px 5px 0 0;
 			  box-shadow: 3px 3px 3px rgba(0,0,0,0.085);
 			  z-index: 99999999999999999;
+			  background: #fff;
+			}
+			@media screen and (max-width: 360px) {
+				.fb-widget-iframe-container {
+					left: -8px !important;
+				}
 			}
 			.fb-widget-iframe-container.fb-widget-left {
 			  left: 5px;
@@ -12,16 +18,23 @@
 			  right: 5px;
 			}
 			.fb-widget-iframe-container iframe {
-			  border-radius: 5px 5px 0 0;
+			  border-radius: 2px 2px 0 0;
 			  transition: all 250ms ease-in-out;
+			  width: 340px;
+			  height: 500px;
+			  max-width: calc(100vw + 12px);
+			  max-height: 100vh;
+			  border: none;
+			  overflow: hidden;
 			}
 			.fb-widget-iframe-container .fb-widget-close-button {
 			  z-index: 999999999999999999;
 			  position: absolute;
 			  top: 0;
 			  right: 6px;
-			  color: #333;
-			  font-weight: 300;
+			  color: #fff;
+			  text-shadow: 1px 1px 3px #000;
+			  font-weight: 400;
 			  font-family: Lato, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
 			  cursor: pointer;
 			  padding: 5px;
@@ -39,7 +52,7 @@
 			.fb-widget-mbutton {
 			  padding: 7px 40px 7px 22px;
 			  position: fixed;
-			  bottom: 0px;
+			  bottom: -3px;
 			  border: 1px solid #eee;
 			  cursor: pointer;
 			  font-family: Lato, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -58,9 +71,16 @@
 			.fb-widget-mbutton div {
 			  display: inline-block;
 			  font-size: 14px;
+			  font-weight: 400;
 			  color: #444;
 			  padding-right: 40px;
 			  cursor: pointer;
+			}
+			@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
+			    /* Retina-specific */
+			    .fb-widget-mbutton div {
+			    	font-weight: 300;
+			    }
 			}
 			.fb-widget-mbutton img {
 			  height: 48px;
@@ -68,4 +88,11 @@
 			  top: -22px;
 			  right: 15px;
 			  cursor: pointer;
+			}
+			@media screen and (max-width: 480px) {
+				.fb-widget-open-freeze-body {
+				    max-height: 100vh;
+				    overflow-y: hidden;
+				    position: fixed;
+				}
 			}
